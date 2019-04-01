@@ -1,5 +1,10 @@
 #!/bin/bash
 
+sudo apt-get update && apt-get -y upgrade 
+sudo apt-get install sshpass 
+sudo apt-get install -y cpulimit git make curl unzip gedit automake autoconf dh-autoreconf build-essential pkg-config openssh-server screen libtool libcurl4-openssl-dev libncurses5-dev libudev-dev libjansson-dev libssl-dev libgmp-dev gcc screen g++
+
+
 if [ "$OS" = "Windows_NT" ]; then
     ./mingw64.sh
     exit 0
